@@ -267,5 +267,5 @@ def get_logs(user_id):
 
 if __name__ == '__main__':
     init_db()
-    port = int (os.environ.get("PORT", 5001))
-    app.run(debug=True, port=port, use_reloader=False, use_reloader=False) 
+    port = int (os.environ.get("PORT", 10000))
+    app.run(host="0.0.0.0", port=port, debug=False, use_reloader=False) 
